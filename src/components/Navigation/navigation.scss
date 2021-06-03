@@ -6,12 +6,23 @@
   top: 46px;
   display: flex;
   flex-direction: column;
-  justify-content: right;
-  .navigation__buttons {
-    font-size: 18px;
-    color: $dark-gray;
+  align-items: flex-end;
+  .navigation__user-buttons {
     li {
-      margin-top: 25px;
+      a {
+        padding: 10px 20px 10px 20px;
+        color: $gray;
+        &:hover {
+          border: 1px solid $gold;
+        }
+      }
+    }
+  }
+  .navigation__buttons {
+    color: $dark-gray;
+    font-size: 18px;
+    li {
+      margin-top: 30px;
 
       a {
         cursor: pointer;
@@ -21,8 +32,6 @@
         &:hover {
           border: 1px solid $dark-gray;
           font-size: 20px;
-          width: 90px;
-          height: 45px;
         }
       }
     }
