@@ -2,8 +2,8 @@ import "./start.scss";
 
 export const Start = () => {
   return (
-    <main>
+    <section>
       <div></div>
-    </main>
+    </section>
   );
 };

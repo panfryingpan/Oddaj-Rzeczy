@@ -2,8 +2,8 @@ import "./contact.scss";
 
 export const Contact = () => {
   return (
-    <main>
+    <section>
       <div></div>
-    </main>
+    </section>
   );
 };

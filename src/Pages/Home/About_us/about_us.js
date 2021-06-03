@@ -2,8 +2,8 @@ import "./about_us.scss";
 
 export const AboutUs = () => {
   return (
-    <main>
+    <section>
       <div></div>
-    </main>
+    </section>
   );
 };

@@ -2,8 +2,8 @@ import "./fundations.scss";
 
 export const Fundations = () => {
   return (
-    <main>
+    <section>
       <div></div>
-    </main>
+    </section>
   );
 };

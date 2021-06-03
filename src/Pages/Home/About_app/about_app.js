@@ -2,8 +2,8 @@ import "./about_app.scss";
 
 export const AboutApp = () => {
   return (
-    <main>
+    <section>
       <div></div>
-    </main>
+    </section>
   );
 };
