@@ -4,13 +4,9 @@ import * as ROUTES from "../../constants/routes";
 import * as Scroll from "react-scroll";
 
 let ScrollLink = Scroll.Link;
-// let ScrollElement = Scroll.Element;
-// let ScrollEvents = Scroll.Events;
-// let ScrollAnimate = Scroll.animateScroll;
-// let ScrollSpy = Scroll.scrollSpy;
 
 export const Navigation = () => (
-  <div className="navigation-wrapper">
+  <nav className="navigation-wrapper">
     <ul className="navigation__user-buttons">
       <li>
         <Link to={ROUTES.LOGIN}>Zaloguj</Link>
@@ -46,5 +42,5 @@ export const Navigation = () => (
         </ScrollLink>
       </li>
     </ul>
-  </div>
+  </nav>
 );
