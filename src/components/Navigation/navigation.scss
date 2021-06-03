@@ -1,7 +1,30 @@
 @import "../../scss/main.scss";
 
 .navigation-wrapper {
-  ul {
-    display: flex;
+  position: fixed;
+  right: 142px;
+  top: 46px;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  .navigation__buttons {
+    font-size: 18px;
+    color: $dark-gray;
+    li {
+      margin-top: 25px;
+
+      a {
+        cursor: pointer;
+        padding: 10px 20px 10px 20px;
+        margin-left: 10px;
+        transition: 0.3s;
+        &:hover {
+          border: 1px solid $dark-gray;
+          font-size: 20px;
+          width: 90px;
+          height: 45px;
+        }
+      }
+    }
   }
 }

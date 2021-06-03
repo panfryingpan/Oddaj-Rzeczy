@@ -4,3 +4,12 @@
 body {
   font-family: $font-base;
 }
+ul {
+  display: flex;
+  li {
+    text-decoration: none;
+    a {
+      text-decoration: none;
+    }
+  }
+}

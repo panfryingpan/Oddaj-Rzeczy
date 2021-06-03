@@ -1,10 +1,17 @@
 import { Link } from "react-router-dom";
 import "./navigation.scss";
 import * as ROUTES from "../../constants/routes";
+import * as Scroll from "react-scroll";
+
+let ScrollLink = Scroll.Link;
+// let ScrollElement = Scroll.Element;
+// let ScrollEvents = Scroll.Events;
+// let ScrollAnimate = Scroll.animateScroll;
+// let ScrollSpy = Scroll.scrollSpy;
 
 export const Navigation = () => (
   <div className="navigation-wrapper">
-    <ul>
+    <ul className="navigation__user-buttons">
       <li>
         <Link to={ROUTES.LOGIN}>Zaloguj</Link>
       </li>
@@ -12,14 +19,31 @@ export const Navigation = () => (
         <Link to={ROUTES.REGISTER}>Załóż konto</Link>
       </li>
     </ul>
-    <ul>
-      <li></li>
-      <li></li>
+    <ul className="navigation__buttons">
       <li>
-        <Link to={ROUTES.HOME}>Strona główna</Link>
+        <ScrollLink to="start" duration={500} smooth={true}>
+          Start
+        </ScrollLink>
       </li>
       <li>
-        <Link to={ROUTES.LOGOUT}>Wyloguj</Link>
+        <ScrollLink to="about_app" duration={500} smooth={true}>
+          O co chodzi?
+        </ScrollLink>
+      </li>
+      <li>
+        <ScrollLink to="about_us" duration={500} smooth={true}>
+          O nas
+        </ScrollLink>
+      </li>
+      <li>
+        <ScrollLink to="fundations" duration={500} smooth={true}>
+          Fundacja i organizacje
+        </ScrollLink>
+      </li>
+      <li>
+        <ScrollLink to="contact" duration={500} smooth={true}>
+          Kontakt
+        </ScrollLink>
       </li>
     </ul>
   </div>

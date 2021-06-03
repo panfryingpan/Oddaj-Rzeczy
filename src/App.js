@@ -9,12 +9,16 @@ function App() {
   return (
     <Router>
       <div>
-        <Navigation />
-        <hr />
+        <header>
+          <Navigation />
+        </header>
+
         <Route exact path={ROUTES.HOME} component={Home} />
         <Route path={ROUTES.REGISTER} component={Register} />
         <Route path={ROUTES.LOGIN} component={Login} />
         <Route path={ROUTES.LOGOUT} component={Logout} />
+
+        <footer></footer>
       </div>
     </Router>
   );
