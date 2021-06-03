@@ -1,16 +1,20 @@
 import { Link } from "react-router-dom";
-
+import "./navigation.scss";
 import * as ROUTES from "../../constants/routes";
 
 export const Navigation = () => (
-  <div>
+  <div className="navigation-wrapper">
     <ul>
       <li>
         <Link to={ROUTES.LOGIN}>Zaloguj</Link>
       </li>
       <li>
-        <Link to={ROUTES.REGISTER}>Zarejestruj</Link>
+        <Link to={ROUTES.REGISTER}>Załóż konto</Link>
       </li>
+    </ul>
+    <ul>
+      <li></li>
+      <li></li>
       <li>
         <Link to={ROUTES.HOME}>Strona główna</Link>
       </li>

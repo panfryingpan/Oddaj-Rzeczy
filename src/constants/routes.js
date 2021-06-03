@@ -1,8 +1,9 @@
 export const HOME = "/";
-export const REGISTER = "/register";
-export const LOGIN = "/login";
-export const LOGOUT = "/logout";
-export const HOME_LOGGED_IN = "/home";
+export const REGISTER = "/rejestracja";
+export const LOGIN = "/logowanie";
+export const LOGOUT = "/wylogowano";
+export const HOME_LOGGED_IN = "/";
 export const ACCOUNT = "/account";
 export const ADMIN = "/admin";
 export const PASSWORD_FORGET = "/pw-forget";
+export const FORM = "/oddaj-rzeczy";
